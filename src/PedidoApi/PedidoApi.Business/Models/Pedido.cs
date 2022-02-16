@@ -1,29 +1,29 @@
 using System;
 using System.Collections.Generic;
 
-namespace PedidoApi.Request
+namespace PedidoApi.Business.Models
 {
-    public class PedidoRequest
+    public class Pedido : Entity
     {
-        public ClienteRequest Cliente { get; set; }
+        public Cliente Cliente { get; set; }
         
-        public EnderecoRequest EnderecoEntrega { get; set; }
+        public Endereco EnderecoEntrega { get; set; }
         
-        public List<ItemPedidoRequest> ItensPedido { get; set; }
+        public List<ItemPedido> ItensPedido { get; set; }
         
-        public DadosPagamentoRequest DadosPagamento { get; set; }
+        public DadosPagamento DadosPagamento { get; set; }
         
         public decimal ValorTotal { get; set; }
     }
 
-    public class ClienteRequest
+    public class Cliente
     {
         public Guid Id { get; set; }
         
         public string Nome { get; set; }
     }
 
-    public class EnderecoRequest
+    public class Endereco
     {
         public string Cep { get; set; }
         
@@ -38,7 +38,7 @@ namespace PedidoApi.Request
         public string Numero { get; set; }
     }
 
-    public class ItemPedidoRequest
+    public class ItemPedido
     {
         public Guid Id { get; set; }
         
@@ -49,7 +49,7 @@ namespace PedidoApi.Request
         public int Valor { get; set; }
     }
 
-    public class DadosPagamentoRequest
+    public class DadosPagamento
     {
         public string NumeroCartao { get; set; }
         

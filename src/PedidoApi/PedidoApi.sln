@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidoApi", "PedidoApi\PedidoApi.csproj", "{9B59B1E5-6623-4736-89EF-DF5C8ED5F664}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidoApi.Repository", "PedidoApi.Repository\PedidoApi.Repository.csproj", "{65AE8010-04A2-4BF3-886C-C4A2F9404E3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidoApi.Business", "PedidoApi.Business\PedidoApi.Business.csproj", "{501F0EE9-82AD-42C2-A5A1-8950C974EBDC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{9B59B1E5-6623-4736-89EF-DF5C8ED5F664}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B59B1E5-6623-4736-89EF-DF5C8ED5F664}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B59B1E5-6623-4736-89EF-DF5C8ED5F664}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65AE8010-04A2-4BF3-886C-C4A2F9404E3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65AE8010-04A2-4BF3-886C-C4A2F9404E3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65AE8010-04A2-4BF3-886C-C4A2F9404E3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65AE8010-04A2-4BF3-886C-C4A2F9404E3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{501F0EE9-82AD-42C2-A5A1-8950C974EBDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{501F0EE9-82AD-42C2-A5A1-8950C974EBDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{501F0EE9-82AD-42C2-A5A1-8950C974EBDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{501F0EE9-82AD-42C2-A5A1-8950C974EBDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

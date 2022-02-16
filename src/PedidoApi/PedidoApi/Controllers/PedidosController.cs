@@ -1,5 +1,7 @@
 using System;
 using Microsoft.AspNetCore.Mvc;
+using PedidoApi.Business.Services.Interfaces;
+using PedidoApi.Mappings;
 using PedidoApi.Request;
 using PedidoApi.Response;
 
@@ -9,12 +11,25 @@ namespace PedidoApi.Controllers
     [Route("pedidos")]
     public class PedidosController : ControllerBase
     {
+        private readonly IPedidoService _pedidoService;
+        
+        public PedidosController(IPedidoService pedidoService)
+        {
+            _pedidoService = pedidoService;
+        }
+        
         [HttpPost]
         public ActionResult<PedidoResponse> CriarPedido(PedidoRequest request)
         {
-            var response = new PedidoResponse {Id = Guid.NewGuid()};
+            // TODO: Adicionar validação do Request
 
-            return Created("", response);
+            var pedido = Mapping.PedidoRequestToPedido(request);
+
+            var id = _pedidoService.RegistrarPedidoRecebido(pedido);
+            
+            var response = new PedidoResponse {Id = id};
+
+            return Accepted("", response);
         }
     }
 }
