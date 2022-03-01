@@ -1,6 +1,6 @@
 using System;
 
-namespace PedidoApi.Business.Models
+namespace PedidoApi.Domain
 {
     public class Entity
     {

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace PedidoApi.Business.Models
+namespace PedidoApi.Domain
 {
     public class Pedido : Entity
     {

@@ -1,9 +1,10 @@
-using PedidoApi.Business.Models;
+using System.Threading.Tasks;
+using PedidoApi.Domain;
 
 namespace PedidoApi.Repository.Interfaces
 {
     public interface IPedidoRepository
     {
-        void Add(Pedido pedido);
+        Task<string> Add(Pedido pedido);
     }
 }
