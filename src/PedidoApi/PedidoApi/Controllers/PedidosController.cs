@@ -25,9 +25,9 @@ namespace PedidoApi.Controllers
 
             var pedido = Mapping.PedidoRequestToPedido(request);
 
-            var id = _pedidoService.RegistrarPedidoRecebido(pedido);
+            _pedidoService.RegistrarPedidoRecebido(pedido);
             
-            var response = new PedidoResponse {Id = id};
+            var response = new PedidoResponse {Id = pedido.Id};
 
             return Accepted("", response);
         }

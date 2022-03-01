@@ -5,7 +5,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\PedidoApi.Business\PedidoApi.Business.csproj" />
+      <ProjectReference Include="..\PedidoApi.Domain\PedidoApi.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Google.Cloud.PubSub.V1" Version="2.7.0" />
+      <PackageReference Include="Google.Cloud.Storage.V1" Version="3.7.0" />
     </ItemGroup>
 
 </Project>

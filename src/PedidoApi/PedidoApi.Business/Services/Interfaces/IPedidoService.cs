@@ -1,10 +1,9 @@
-using System;
-using PedidoApi.Business.Models;
+using PedidoApi.Domain;
 
 namespace PedidoApi.Business.Services.Interfaces
 {
     public interface IPedidoService
     {
-        Guid RegistrarPedidoRecebido(Pedido pedido);
+        void RegistrarPedidoRecebido(Pedido pedido);
     }
 }

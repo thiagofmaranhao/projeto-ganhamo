@@ -30,6 +30,8 @@ namespace PedidoApi
             services.AddControllers();
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "PedidoApi", Version = "v1"}); });
             services.ResolveDependencies();
+            
+            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "/Users/thiagofmaranhao/Documents/repos/gcp/projeto-ganhamo/key/projeto-ganhamo-89b029efbe83.json");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
